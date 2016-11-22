@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="REMEMBER_VPN_SELECTION"
+        android:title="@string/remember_vpn_title"
+        android:summary="@string/remember_vpn_summary"
+        android:defaultValue="true" />
+
+    <CheckBoxPreference
+        android:key="SHOW_LOG"
+        android:title="@string/show_log"
+        android:summary="@string/show_log_sum"
+        android:defaultValue="false" />
+    
+    
+</PreferenceScreen>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="routes_info_incl">Routes: %1$s %2$s</string>
+	<string name="routes_info_excl">Routes excluded: %1$s %2$s</string>    
+    <string name="title_activity_login">Log in</string>
+    <string name="prompt_email">email / customer no. / VPN user</string>
+    <string name="prompt_email_only">email</string>
+    <string name="prompt_password">password</string>
+    <string name="action_sign_in_short">Log in</string>
+    <string name="action_forgot_password">Forgot password</string>
+    <string name="login_progress_signing_in">Sign in&#8230;</string>
+    <string name="register_process_registering">Register&#8230;</string>
+    <string name="error_invalid_password">The password is too short</string>
+    <string name="error_passwords_dont_match">The passwords don\'t match</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="app_name">Shellfire VPN</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_connect">Connect</string>
+    <string name="title_serverlist">Server list</string>
+    <string name="title_log">Log</string>
+    <string name="title_billing">Premium</string>
+    <string name="connect">Connect</string>
+    <string name="route_rejected">Route rejected by Android</string>
+    <string name="tun_error_helpful">On some custom ICS images the permission on /dev/tun might be wrong, or the tun module might be missing completely. For CM9 images try the fix ownership option under general settings</string>
+    <string name="tun_open_error">Failed to open the tun interface</string>
+    <string name="error">"Error: "</string>
+    <string name="last_openvpn_tun_config">Opening tun interface:</string>
+    <string name="local_ip_info">Local IPv4: %1$s/%2$d IPv6: %3$s MTU: %4$d</string>
+    <string name="dns_server_info">DNS Server: %1$s, Domain: %2$s</string>
+    <string name="routes_info">Routes: %s</string>
+    <string name="routes_info6">Routes IPv6: %s</string>
+    <string name="ip_not_cidr">Got interface information %1$s and %2$s, assuming second address is peer address of remote. Using /32 netmask for local IP. Mode given by OpenVPN is \"%3$s\".</string>
+    <string name="route_not_cidr">Cannot make sense of %1$s and %2$s as IP route with CIDR netmask, using /32 as netmask.</string>
+    <string name="route_not_netip">Corrected route %1$s/%2$s to %3$s/%2$s</string>
+    <string name="no_vpn_support_image">Your image does not support the VPNService API, sorry :(</string>
+    <string name="encryption">-Encryption</string>
+    <string name="opentun_no_ipaddr">Refusing to open tun device without IP information</string>
+    <string name="building_configration">Building configuration…</string>
+    <string name="netstatus">Network Status: %s</string>
+    <string name="mobile_info">Running on %1$s (%2$s) %3$s, Android API %4$d</string>
+    <string name="error_rsa_sign">Error signing with Android keystore key %1$s: %2$s</string>
+    <string name="warn_no_dns">No DNS servers being used. Name resolution may not work. Consider setting custom DNS Servers. Please also note that Android will keep using your proxy settings specified for your mobile/Wi-Fi connection when no DNS servers are set.</string>
+    <string name="dns_add_error">Could not add DNS Server \"%1$s\", rejected by the system: %2$s</string>
+    <string name="ip_add_error">Could not configure IP Address \"%1$s\", rejected by the system: %2$s</string>
+    <string name="getproxy_error">Error getting proxy settings: %s</string>
+    <string name="using_proxy">Using proxy %1$s %2$d</string>
+    <string name="minidump_generated">OpenVPN crashed unexpectedly. Please consider using the send Minidump option in the main menu</string>
+    <string name="session_ipv4string">%1$s - %2$s</string>
+    <string name="session_ipv6string">%1$s - %3$s, %2$s</string>
+    <string name="state_connecting">Connecting</string>
+    <string name="state_wait">Waiting for server reply</string>
+    <string name="state_auth">Authenticating</string>
+    <string name="state_get_config">Getting client configuration</string>
+    <string name="state_assign_ip">Assigning IP addresses</string>
+    <string name="state_add_routes">Adding routes</string>
+    <string name="state_connected">Connected</string>
+    <string name="state_disconnected">Disconnect</string>
+    <string name="state_reconnecting">Reconnecting</string>
+    <string name="state_exiting">Exiting</string>
+    <string name="state_noprocess">Not running</string>
+    <string name="state_resolve">Resolving host names</string>
+    <string name="state_tcp_connect">Connecting (TCP)</string>
+    <string name="unknown_state">Unknown</string>
+    <string name="state_nonetwork">Waiting for usable network</string>
+    <string name="statusline_bytecount">↓%2$s/s %1$s - ↑%4$s/s %3$s</string>
+    <string name="start_vpn_title">Connecting to VPN %s</string>
+    <string name="start_vpn_ticker">Connecting to VPN %s</string>
+    <string name="mobile_info_extended">Running on %1$s (%2$s) %3$s, Android API %4$d, version %5$s, %6$s</string>
+    <string name="built_by">built by %s</string>
+    <string name="debug_build">debug build</string>
+    <string name="official_build">official build</string>
+    <string name="screenoff_pause">Pausing connection in screen off state: less than %1$s in %2$ss</string>
+    <string name="state_userpause">VPN pause requested by user</string>
+    <string name="state_screenoff">VPN paused - screen off</string>
+    <string name="defaultServerName">Server XX</string>
+    <string name="default_server_type">PremiumPlus</string>
+
+    <color name="not_connected">#FF0000</color>
+    <color name="connected">#00FF00</color>
+    <color name="connecting">#BBBBBB</color>
+    <color name="selected">#23718e</color>
+    <color name="vpntable_header_bg">#12ACE5</color>
+    <color name="vpntable_header_text">#FFFFFF</color>
+    <color name="vpntable_row_even_bg">#EEEEEE</color>
+    <color name="vpntable_row_text">#404549</color>
+    <color name="vpntable_row_uneven_bg">#FFFFFF</color>
+
+    <string name="title_activity_select_vpn">VPN auswählen</string>
+    <string name="vpnSelectReason">Multiple VPNs found in your Shellfire Account. Please choose which one to use.</string>
+    <string name="rememberVpnSelection">Save selection</string>
+    <string name="remember_vpn_summary">In case multiple VPNs are present, you don\'t have to select the VPN at each log in.</string>
+    <string name="remember_vpn_title">Save selected VPN</string>
+    <string name="show_log_sum">Displaying the log permanently can lead to performance loss (requires restarting the app).</string>
+    <string name="show_log">Display log</string>
+    <string name="default_product_type">Free</string>
+    <string name="default_vpn_name">sfxxxx</string>
+    <string name="selected_vpn">VPN</string>
+    <string name="selected_server">Server</string>
+    <string name="connectionAdvice">Connects to the selected server. To change servers, swipe to the right.</string>
+    <string name="empty"></string>
+    <string name="log">Application Log</string>
+    <string name="connectionState">Status:</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="login">Login</string>
+    <string name="noAccountData">Not registered?</string>
+    <string name="lostAccountData">Lost your password?</string>
+    <string name="title_activity_register">Register</string>
+    <string name="subscribeNewsletter">I subscribe to the newsletter</string>
+    <string name="buyDailyPremium">0,99 Euro / 24 hrs.</string>
+    <string name="buyDailyPremiumPlus">1,99 Euro / 24 hrs.</string>
+    <string name="buyMonthlyPremium">3,49 euros / month</string>
+    <string name="buyMonthlyPremiumPlus">7,95 euros / month</string>
+    <string name="buyYearlyPremium">39,90 euros / year</string>
+    <string name="buyYearlyPremiumPlus">84,90 euros / year</string>
+    <string name="premiumUntil">Premium until: </string>
+    <string name="sendToShellfire">Send log to Shellfire</string>
+    <string name="verifying_purchase">Purchase is being verified...</string>
+    <string name="premium_upgrade_succesful_show_serverlist">Premium Upgrade successful. Display Server list?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="upgrade_not_successful_check_log">Upgrade not successful, check log!</string>
+    <string name="problem_setting_up_in_app_billing">"Problem setting up In-app Billing: "</string>
+    <string name="loading">Loading...</string>
+    <string name="send_log_to_shellfire">Send log to Shellfire</string>
+    <string name="log_send_succesfully">Log sent to Shellfire successfully</string>
+    <string name="log_could_not_be_sent">Log could not be sent</string>
+    <string name="connecting">Connecting...</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connected">Connected</string>
+    <string name="loading_certificates">Loading Certificates</string>
+    <string name="item_already_owned_consuming">item already owned - consuming</string>
+    <string name="item_consumed">item consumed</string>
+    <string name="already_on_this_server_doing_nothing">Already on this server - doing nothing</string>
+    <string name="not_showing_premium_info">Not showing premium info</string>
+    <string name="you_are_not_eligible_to_use_this_server">Server not available to you.
+\nWould you like to see upgrade informations?</string>
+    <string name="you_are_currently_connecting_disconnect">You are currently connected. You have to disconnect prior to the server change. Disconnect now?</string>
+    <string name="not_changing_server">Server change cancelled</string>
+    <string name="sure_to_change_server">Are you sure you want to change servers?</string>
+    <string name="serverchange_is_being_processed_might_take_a_while">Server is being changed. This can take a moment...</string>
+    <string name="server_selection_succesfully_performed_on_backend">Server change successful.</string>
+    <string name="server_selection_could_not_be_changed">Server could not be changed. Please check the log for details.</string>
+    <string name="connecting_please_wait">Connection is being processed - please wait</string>
+    <string name="action_about">About Shellfire VPN</string>
+    <string name="star_2">star_2</string>
+    <string name="star_3">star_3</string>
+    <string name="star_4">star_4</string>
+    <string name="star_5">star_5</string>
+    <string name="star_1">star_1</string>
+    <string name="country">country</string>
+    <string name="title_activity_about">About Shellfire VPN</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="copyright_shellfire">&#169; 2014 by Shellfire Gattung u. Behr GbR</string>
+    <string name="bouncy_castle">Bouncy Castle Crypto APIs</string>
+    <string name="copyright_openssl">This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit\n
+        Copyright © 1998-2008 The OpenSSL Project. All rights reserved.\n\n
+        This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)\n
+        Copyright © 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.</string>
+    <string name="openssl">OpenSSL</string>
+    <string name="lzo_copyright">Copyright © 1996 – 2011 Markus Franz Xaver Johannes Oberhumer</string>
+    <string name="lzo">LZO</string>
+    <string name="copyright_others">This program uses the following components; see the source code for full details on the licenses (available at https://code.google.com/p/shellfirevpn4a/)</string>
+    <string name="copyright_arne">The ics-openvpn project, Copyright 2012-2013 Arne Schwabe (arne@rfc2549.org) available at: https://code.google.com/p/ics-openvpn/</string>
+    <string name="openvpn">OpenVPN</string>
+    <string name="opevpn_copyright">Copyright © 2002–2010 OpenVPN Technologies, Inc. &lt;sales@openvpn.net>\n
+
+	  "OpenVPN" is a trademark of OpenVPN Technologies, Inc.\n</string>
+    <string name="copyright_bouncycastle">Copyright © 2000–2012 The Legion Of The Bouncy Castle (http://www.bouncycastle.org)</string>
+    <string name="ics_openvpn">ics-openvpn</string>
+    <string name="until">until</string>
+    <string name="state_user_vpn_password">Waiting for user VPN password</string>
+    <string name="state_user_vpn_permission_cancelled">VPN API permission dialog cancelled</string>
+    <string name="account_created_succesfully">Account created successfully - please check your emails for the activation email.</string>
+    <string name="premium">Premium</string>
+    <string name="premiumplus">Premium\nPlus</string>
+    <string name="hours24">24 hours</string>
+    <string name="month_1">1 month</string>
+    <string name="monthly">monthly</string>
+    <string name="yearly">yearly</string>
+    <string name="cents99">0.99 Eur</string>
+    <string name="cents199">1.99 Eur</string>
+    <string name="cents495">4.95 Eur</string>
+    <string name="cents995">9.95 Eur</string>
+    <string name="cents395">3.95 Eur</string>
+    <string name="cents795">7.95 Eur</string>
+    <string name="cents3990">39.90 Eur</string>
+    <string name="cents8490">84.90 Eur</string>
+    <string name="buy">Buy</string>
+    <string name="compare">Compare</string>
+    <string name="singlePayment">single payment *</string>
+    <string name="subscription">subscription **</string>
+    <string name="note_payment_types">* credit card not required.\r\n
+** credit card required; can be cancelled anytime via Google Play. \r\n
+\r\n
+pay with Paypal on our website: https://www.shellfire.co.uk/vpn</string>
+    <string name="selecting_vpn">Selecting VPN...</string>
+    <string name="register">Accept &amp; Register</string>
+    <string name="welcomeText">Welcome to Shellfire VPN!</string>
+    <string name="needToAcceptAndRegister">You need to accept the terms and conditions and register with your google account in order to use Shellfire VPN</string>
+    <string name="i_have_an_account">I already have a Shellfire account</string>
+    <string name="login_with_existing_account">Log in with your existing Shellfire account</string>
+    <string name="cobiCodeEnter">COMPUTER BILD Campaign</string>
+    <string name="cobiClickHere">Enter Code</string>
+
+    <string name="enter_cobi_code">enter COMPUTERBILD Code here:</string>
+    <string name="action_share">Share this app</string>
+    <string name="share_with">Share via</string>
+    <string name="share_text">I use the Shellfire #VPN App to secure my data from hackers and unblock censored content: http://bit.ly/1lu3Yyl</string>
+    
+    <string name="action_rate">Rate this app</string>
+    <string name="rate_this_app">Rate this app</string>
+    <string name="rate_explanation">Has this app convinced you? We would be very happy if you could rate our application on Google Play. Thanks for your support!</string>
+    <string name="rate_now">Rate now</string>
+    <string name="rate_later">Later</string>
+    <string name="rate_never">No, thanks</string>
+
+
+    <string name="retry">Retry</string>
+    <string name="network_problem_title">Network problem</string>
+    <string name="network_problem_message">You are currently not connected to the internet. Shellfire VPN requires an active internet connection.</string>
+    <string name="login_error">login failure.</string>
+    <string name="serverLoad">current server load</string>
+    <string name="reloadServerList">Reload</string>
+    <string name="upgrade_not_successful">Upgrade not successful</string>
+    
+    <string name="new_version_available_title">New version available</string>
+    <string name="new_version_available_message">There is a new version of Shellfire VPN available on the Google Play Store. You should install it soon, because this version might not work properly anymore or contain security issues.
+        
+Go to the Play Store now to update? 
+        
+Note: You may have to uninstall / re-install to receive the newest version.</string>
+    
+    <string name="dontshowagain">No and do not show again</string>
+    <string name="not_now">Not now</string>
+    <string name="server">Server</string>
+    
+    <string name="_128bit">128 bit encryption</string>
+    <string name="_192bit">192 bit encryption</string>
+    <string name="_256bit">256 bit encryption</string>
+    
+    <string name="upto786">up to 786 kbit/sec</string>
+    <string name="upto10000">up to 10,000 kbit/sec</string>
+    <string name="unlimited">unlimited kbit/sec</string>
+
+    
+    <string name="php_invalid_email">Please enter a valid email address.</string>
+    <string name="php_account_exists">A registered account for that e-mail address already exists.</string>
+    <string name="php_welcome_email">Hi and welcome to the free Shellfire VPN service!
+
+You have been automatically registered with your Google email-address %1$s.
+
+Your account is currently bound to your device. If you want to login with another device (e.g. other tablet or smartphone) and the same account, you should set a password.
+
+Click on this link to set a password: https://www.shellfire.net/passwort-verloren/?pwReqByCustNoFormSent=1&amp;LoginName=%2$s
+
+You can access our free servers in Germany and the USA with up to 786 kbit/sec. With our premium packages, you get unlimited speed and access to servers in 19 countries world-wide. Take a look at the tab \"serverlist\" in the app for the full list of available countries.
+
+Premium packages start from 99 Cent for a 24 hour pass (see the tab \"premium\").
+
+If you have questions, please contact us at https://www.shellfire.net/kontakt/
+
+That\'s is for now - enjoy our great free service!</string>
+
+    <string name="php_signature">Best regards from the Shellfire team
+
+P.S.: New: Earn money with Shellfire! When you get us new customeres, we pay you up to 100% commission: https://www.shellfire.net/affiliate-center/
+
+P.P.S.: Follow us on Twitter: http://twitter.com/#!/shellfire_en
+
+Shellfire Gattung &amp; Behr GbR
+http://www.shellfire.net
+mailto:hosting@shellfire.de
+
+----------------------------------------------------------------------------
+Shellfire Gattung &amp; Behr GbR
+Management: Florian Gattung, Maximilian Behr
+Partnership under the Civil Code based in Bad Vilbel, Germany</string>
+    
+   <string name="php_surf_anonym">Surf the web anonymously</string>
+   <string name="php_hide_ip">Hide your own IP address</string>
+   <string name="php_encrypt_internet">Encrypted internet connection</string>
+   <string name="php_secure_wifi">Safely use public wifi hotspots</string>
+   <string name="php_unlimited">unlimited</string>
+   <string name="php_traffic">Traffic / data volume</string>
+   <string name="php_speed_generic">%1$s kbit/sec</string>
+   <string name="php_speed">Speed</string>
+   <string name="php_server_in_generic">Server in %1$s</string>
+   <string name="php_change_location">Change location at all times</string>
+   <string name="php_streaming_websites">Streaming websites</string>
+    
+    
+    
+   <string name="play_product_description">Shellfire VPN - easy. safe. connected. No registration.
+
+Shellfire VPN is FREE and will never cost you a dime. Unlimited Traffic, Unlimited Time!
+
+Shellfire VPN hides your IP address, unblocks the Internet and gives you the ability to freely and anonymously access any site you want. With Shellfire VPN, you can connect to any website with the confidence knowing that you are undercover. We unblock Skype, Facebook, Twitter, YouTube etc. in countries with Internet censorship and even give you access your home country\'s TV and radio services from abroad.
+
+Shellfire VPN gives you super strong encryption to protect your data from hackers, the NSA and other threats, even in unsecure public wifi networks!
+
+Upgrade to Premium to get
+ - Higher Speed.
+ - Stronger Encryption.
+ - Free choice from our servers in:
+Austria, Canada, France, Germany, Hong Kong, Italy, Netherlands, Poland, Romania, Russia, Spain, Sweden, Switzerland, United Kingdom and USA
+- PremiumPlus customers get exclusive access to servers in:
+Chile, Iceland, Isle of Man (offshore) and Liechtenstein
+
+Shellfire VPN - the ultimate VPN client for Android.
+
+Shellfire VPN also runs on Windows, Mac OS, iOS or Linux! Visit https://www.shellfire.net/vpn/ for more details.
+
+For instant updates do follow us in Facebook &amp; Twitter
+https://www.facebook.com/shellfire.de
+https://twitter.com/shellfire_en</string>
+    
+   <string name="play_promo_text">Surf anonymously - Encrypted connection - Access Hulu, Youtube... from anywhere</string>
+   
+   <string name="play_product_description_generic">%1$s bit encryption
+Upto %2$s kbit/s transfer rate
+Server in %3$s countries world-wide</string>
+   
+</resources>
